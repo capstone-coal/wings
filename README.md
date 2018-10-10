@@ -38,13 +38,17 @@ Example: (The following needs to go inside the <tomcat-users ..> Section.
 
  `<Resource name="UserDatabase" ...  readonly="false"/>`
 
-5. Add the following to the "Context" section
+5. The add the following to the "Context" section if it exists, if not create one
  
- `<ResourceLink name="users" global="UserDatabase" type="org.apache.catalina.UserDatabase" />`
+```
+<Context>
+	<ResourceLink name="users" global="UserDatabase" type="org.apache.catalina.UserDatabase" />
+</Context>
+```
 
 6. Start tomcat
 
- `$ /path/to/tomcat/bin/startup.sh`
+ `$ /path/to/tomcat/bin/catalina.sh start`
 
 7. Login to the server from http://<your-server-name>:8080/wings-portal/login
  - Note: 8080 is the default Tomcat port, but this can be changed in server.xml

@@ -41,7 +41,7 @@
 		</dependency-->
 
 		<!-- Wings OODT Adapter -->
-		<!--dependency>
+		<dependency>
 			<groupId>edu.isi.wings</groupId>
 			<artifactId>wings-oodt-adapter</artifactId>
 			<version>${project.parent.version}</version>
@@ -51,7 +51,7 @@
 			<artifactId>wings-oodt-wmservices</artifactId>
 			<version>${project.parent.version}</version>
 			<type>war</type>
-		</dependency-->
+		</dependency>
 		
 		<!-- Wings OPM Mapper -->
 		<dependency>
